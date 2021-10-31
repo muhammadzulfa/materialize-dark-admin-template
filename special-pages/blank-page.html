@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#16213e">
+   <meta name="description" content="Blank Page - Dark Admin">
+   <meta name="keywords"
+      content="Dark Admin, Template Dark Admin, Template Dark, Template Admin, Free Template, Premium Template">
+   <meta name="author" content="Dev By Z">
+   <title>Blank Page - Dark Admin</title>
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+   <!-- Materialize -->
+   <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
+   <!-- Overlay Scrollbars -->
+   <link rel="stylesheet" href="/assets/overlay-scrollbars/css/OverlayScrollbars.min.css">
+   <!-- Dark Admin -->
+   <link rel="stylesheet" href="/assets/darkadmin/css/darkadmin.min.css">
+   <!-- Fonts & Icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- Preloader -->
+
+   <div id="preloader">
+      <div class="preloader-wrapper big active">
+         <div class="spinner-layer">
+            <div class="circle-clipper left">
+               <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+               <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+               <div class="circle"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- End Preloader -->
+
+   <!-- Floating Button -->
+
+   <div class="fixed-action-btn">
+      <a class="btn-floating btn-large btn-danger">
+         <i class="large material-icons">shopping_cart</i>
+      </a>
+      <ul>
+         <li>
+            <a href="#!" class="btn-floating btn-danger tooltipped" data-position="left" data-tooltip="Buy Now">
+               <i class="material-icons">shopping_cart</i>
+            </a>
+         </li>
+         <li>
+            <a href="#!" class="btn-floating btn-warning tooltipped" data-position="left"
+               data-tooltip="Download Beta Version">
+               <i class="material-icons">get_app</i>
+            </a>
+         </li>
+         <li>
+            <a href="https://muhammadzulfa.github.io" target="_blank" class="btn-floating btn-success tooltipped"
+               data-position="left" data-tooltip="Developer">
+               <i class="material-icons">code</i>
+            </a>
+         </li>
+         <li>
+            <a href="#!" class="btn-floating btn-primary tooltipped" data-position="left" data-tooltip="Documentation">
+               <i class="material-icons">article</i>
+            </a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- End Floating Buttons -->
+
+   <!-- Navbar -->
+
+   <div class="navbar-fixed">
+      <nav class="header">
+         <div class="nav-wrapper">
+            <ul class="left">
+               <li>
+                  <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light">
+                     <i class="material-icons">menu</i>
+                  </a>
+               </li>
+               <li>
+                  <a href="#!" class="logo">
+                     Dark<span>Admin</span>
+                  </a>
+               </li>
+            </ul>
+            <ul class="right">
+               <li>
+                  <a href="search" class="waves-effect waves-light" id="search">
+                     <i class="material-icons">search</i>
+                  </a>
+               </li>
+               <li>
+                  <a href="/notifications.html" class="waves-effect waves-light">
+                     <i class="material-icons">notifications<span class="notif pulse"></span></i>
+                  </a>
+               </li>
+               <li>
+                  <a class="waves-effect waves-light dropdown-trigger" href="#!" data-target="dropdown-user">
+                     <span class="hide-on-small-only">Muhammad Zulfa
+                        <i class="material-icons right">keyboard_arrow_down</i>
+                     </span>
+                     <span class="hide-on-med-and-up">
+                        <i class="material-icons">account_circle</i>
+                     </span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <ul id="dropdown-user" class="dropdown-content">
+            <li><a href="/profile.html" class="waves-effect waves-light">Profile</a></li>
+            <li><a href="/profile.html" class="waves-effect waves-light">Edit Profile</a></li>
+            <li><a href="/switch-user.html" class="waves-effect waves-light">Switch User</a></li>
+            <li><a href="/setting.html" class="waves-effect waves-light">Setting</a></li>
+            <li><a href="/logout.html" class="waves-effect waves-light">Log Out</a></li>
+         </ul>
+      </nav>
+   </div>
+
+   <div id="overlay-search"></div>
+   <div id="form-search">
+      <div class="container">
+         <form action="">
+            <div class="input-field">
+               <i class="material-icons prefix">search</i>
+               <input type="text" id="search-input" class="search">
+               <label for="search-input">Search here...</label>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <!-- End Navbar -->
+
+   <!-- Sidebar -->
+
+   <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+         <ul class="collapsible">
+            <li><a class="subheader">Main</a></li>
+            <li>
+               <a href="/dashboard.html" class="waves-effect waves-light">
+                  <i class="material-icons">home</i>Dashboard
+               </a>
+            </li>
+            <li><a class="subheader">Web Apps</a></li>
+            <li id="collapse-email">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">email</i>Email
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/email/inbox.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Inbox
+                        </a>
+                     </li>
+                     <li><a href="/email/read.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Read
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/email/compose.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Compose
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <a href="/chat.html" class="waves-effect waves-light">
+                  <i class="material-icons">chat</i>Chat
+               </a>
+            <li>
+               <a href="/calendar.html" class="waves-effect waves-light">
+                  <i class="material-icons">calendar_today</i>Calendar
+               </a>
+            </li>
+            <li><a class="subheader">Components</a></li>
+            <li id="collapse-ui-kit">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">link</i>UI Kit
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/ui-kit/alerts.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Alerts
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/badges.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Badges
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/breadcrumbs.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Breadcrumbs
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/buttons.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Buttons
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/button-group.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Button Group
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/cards.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Cards
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/carousel.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Carousel
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/collapse.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Collapse
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/dropdowns.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Dropdowns
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/list-group.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>List Group
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/media-object.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Media Object
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/modal.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Modal
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/navs.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Navs
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/navbar.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Navbar
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/pagination.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Pagination
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/popovers.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Popovers
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/progress.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Progress
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/scrollbar.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Scrollbar
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/scrollspy.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Scrollspy
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/spinners.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Spinners
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/ui-kit/tooltips.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Tooltips
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-advanced-ui">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">anchor</i>Advanced UI<i
+                     class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/advanced-ui/cropper.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Cropper
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/advanced-ui/owl-carousel.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Owl Carousel
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/advanced-ui/sweet-alert.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Sweet Alert
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-forms">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">inbox</i>Forms
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/forms/basic-elements.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Basic Elements
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/forms/advanced-elements.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Advanced Elements
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/forms/editors.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Editors
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/forms/wizard.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Wizard
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-charts">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">insights</i>Charts
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/charts/apex.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Apex
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/charts/chartjs.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>ChartJs
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/charts/flot.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Flot
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/charts/morris.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Morris
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/charts/peity.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Peity
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/charts/sparkline.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Sparkline
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-tables">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">table_chart</i>Tables
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/tables/basic-tables.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Basic Tables
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/tables/data-tables.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Data Tables
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-icons">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">sentiment_satisfied_alt</i>Icons
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/icons/material-icons.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Material Icons
+                        </a>
+                        <a href="/icons/feather-icons.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Feather Icons
+                        </a>
+                        <a href="/icons/flag-icons.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Flag Icons
+                        </a>
+                        <a href="/icons/mdi-icons.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Mdi Icons
+                        </a>
+                        <a href="/icons/line-awesome.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Line Awesome
+                        </a>
+                        <a href="/icons/font-awesome.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Font Awesome
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li><a class="subheader">Pages</a></li>
+            <li id="collapse-special-pages" class="active">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">library_books</i>Special Pages
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li class="active">
+                        <a href="/special-pages/blank-page.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">lens</i>Blank Page
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/special-pages/faq.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Faq
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/special-pages/invoice.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Invoice
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/special-pages/profile.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Profile
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/special-pages/pricing.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Pricing
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/special-pages/timeline.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Timeline
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-authentication">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">lock_open</i>Authentication
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/authentication/login.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Login
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/authentication/register.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>Register
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li id="collapse-error">
+               <a class="collapsible-header waves-effect waves-light">
+                  <i class="material-icons">cloud_off</i>Error
+                  <i class="material-icons arrow_right">keyboard_arrow_right</i>
+               </a>
+               <div class="collapsible-body">
+                  <ul>
+                     <li>
+                        <a href="/error/404.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>404
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/error/500.html" class="waves-effect waves-light">
+                           <i class="tiny material-icons">panorama_fish_eye</i>500
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+         </ul>
+      </li>
+      <li><a class="subheader">Docs</a></li>
+      <li style="margin-bottom: 100px;">
+         <a href="#!" class="waves-effect waves-light">
+            <i class="material-icons">article</i>Documentation
+         </a>
+      </li>
+   </ul>
+
+   <!-- End Sidebar -->
+
+   <!-- Main Page -->
+
+   <div class="main">
+      <div class="row">
+         <div class="col m12">
+            <h3 class="page-title">Blank Page</h3>
+         </div>
+
+
+      </div>
+   </div>
+
+   <!-- End Main Page -->
+
+   <!-- Footer -->
+
+   <footer class="footer center">
+      &copy; Copyright 2020 <a href="#!"><span class="white-text">Dark</span>Admin</a>. All Right Reserved.
+   </footer>
+
+   <!-- End Footer -->
+
+   <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <!-- Materialize -->
+   <script src="/assets/materialize/js/materialize.min.js"></script>
+   <!-- Overlay Scrollbars -->
+   <script src="/assets/overlay-scrollbars/js/jquery.overlayScrollbars.min.js"></script>
+   <script src="/assets/overlay-scrollbars/js/OverlayScrollbars.min.js"></script>
+   <!-- Dark Admin -->
+   <script src="/assets/darkadmin/js/darkadmin.min.js"></script>
+</body>
+
+</html>
